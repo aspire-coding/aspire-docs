@@ -1,9 +1,9 @@
 module.exports = {
-    title: 'Hello VuePress',
-    description: 'Just playing around',
+    title: 'Aspire Ui',
+    description: '简单工作 简单生活',
     base: '/vuepress-demo/',
     head:[
-        ['link', {rel:'icon', href:'/image/123.ico'}]
+        ['link', {rel:'icon', href:'/image/favicon.ico'}]
     ],
     themeConfig: {
         nav: [
@@ -20,8 +20,8 @@ module.exports = {
         ],
         sidebar: {
             '/guide/' :[
-                ['/guide/hello', 'hello title'],
-                '/guide/word'
+                ['/guide/introduction', '介绍'],
+                '/guide/query-table'
             ]
         }
     }
