@@ -2,7 +2,7 @@
 
  - [VuePress][1] - Vue 驱动的静态网站生成器
 
-> 仓库地址：https://github.com/yinian-R/vuepress-demo
+> 仓库地址：https://github.com/aspire-coding/aspire-docs.git
 
 
 ## 全局安装

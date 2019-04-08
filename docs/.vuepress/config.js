@@ -3,7 +3,7 @@ module.exports = {
     description: 'Just playing around',
     base: '/vuepress-demo/',
     head:[
-        ['link', {rel:'icon', href:'/image/favicon.ico'}]
+        ['link', {rel:'icon', href:'/image/123.ico'}]
     ],
     themeConfig: {
         nav: [
@@ -13,10 +13,10 @@ module.exports = {
                 text: '语言',
                 items: [
                     { text: '中文', link: '/language/chinese/' },
-                    { text: 'English', link: '/language/english/' }
+                    // { text: 'English', link: '/language/english/' }
                 ]
             },
-            { text: 'GitHub', link: 'https://github.com' }
+            { text: 'GitHub', link: 'https://github.com/aspire-coding/aspire-docs' }
         ],
         sidebar: {
             '/guide/' :[
