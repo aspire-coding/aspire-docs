@@ -1,7 +1,7 @@
 module.exports = {
     title: 'Aspire Frontend',
     description: '简单工作 简单生活',
-    base: '/',
+    base: '/aspire-docs/',
     head:[
         ['link', {rel:'icon', href:'/image/favicon.ico'}]
     ],
@@ -24,5 +24,8 @@ module.exports = {
                 '/guide/query-table'
             ]
         }
+    },
+    markdown: {
+        lineNumbers: true
     }
 };
