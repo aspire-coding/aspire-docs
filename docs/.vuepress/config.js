@@ -1,6 +1,7 @@
 module.exports = {
     title: 'Aspire Frontend',
     description: '简单工作 简单生活',
+    dest: './dist',  // 设置输出目录
     base: '/aspire-docs/',
     head:[
         ['link', {rel:'icon', href:'/image/favicon.ico'}]

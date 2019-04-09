@@ -180,7 +180,7 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
- git push -f git@github.com:yinian-R/vuepress-demo.git master:gh-pages
+# git push -f git@github.com:aspire-coding/aspire-docs.git master:gh-pages
 
 cd -
 ```
