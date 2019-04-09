@@ -185,4 +185,14 @@ git commit -m 'deploy'
 cd -
 ```
 
+**w温馨提示** 以上配置会出现js,css及哦啊本加载错误的问题，需要进行配置
+
+```
+# docs/.vuepress/config.js
+
+module.exports = {
+    dest: './dist',  // 设置输出目录
+}
+```
+
   [1]: https://vuepress.vuejs.org/zh/
