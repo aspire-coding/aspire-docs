@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /image/favicon.ico
-heroText: aspire-ui 开发文档
+heroText: aspire-frontend 开发文档
 tagline: 简约而不简单
 actionText: 快速上手 →
 actionLink: /guide/

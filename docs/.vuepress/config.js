@@ -1,7 +1,7 @@
 module.exports = {
-    title: 'Aspire Ui',
+    title: 'Aspire Frontend',
     description: '简单工作 简单生活',
-    base: '/vuepress-demo/',
+    base: '/',
     head:[
         ['link', {rel:'icon', href:'/image/favicon.ico'}]
     ],
@@ -20,7 +20,7 @@ module.exports = {
         ],
         sidebar: {
             '/guide/' :[
-                ['/guide/introduction', '介绍'],
+                ['/guide/', '介绍'],
                 '/guide/query-table'
             ]
         }
