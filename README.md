@@ -186,7 +186,7 @@ git commit -m 'deploy'
 cd -
 ```
 
-**温馨提示:** 以上配置会出现js,css及哦啊本加载错误的问题，需要进行配置
+**温馨提示:** 以上配置会出现js,css加载错误的问题，需要进行配置
 
 ```
 # docs/.vuepress/config.js

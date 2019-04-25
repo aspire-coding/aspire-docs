@@ -19,13 +19,38 @@ module.exports = {
             // },
             { text: 'GitHub', link: 'https://github.com/aspire-coding/aspire-docs' }
         ],
-        sidebar: {
-            '/guide/' :[
-                ['/guide/', '介绍'],
-                ['/guide/standard', '开发规范'],
-                '/guide/query-table'
-            ]
-        }
+        // sidebar: {
+        //     '/guide/' :[
+        //         ['/guide/', '介绍'],
+        //         ['/guide/standard', '开发规范'],
+        //         ['/guide/css', '公有css使用'],
+        //         ['/guide/asp-tree-select', 'AspTreeSelect 下拉树'],
+        //         '/guide/query-table'
+        //     ]
+        // }
+        sidebar: [
+            ['/guide/', '介绍'],
+            ['/guide/standard', '开发规范'],
+            ['/guide/css', '公有css使用'],
+            {
+                title: '组件',
+                collapsable: false,
+                children: [
+                    ['/guide/components/asp-tree-select', 'TreeSelect 下拉树'],
+                    ['/guide/components/Card', 'Card 卡片'],
+                    ['/guide/components/query-table', 'QueryTable 搜索表格'],
+                    ['/guide/components/query-form', 'QueryForm 搜索框'],
+                    ['/guide/components/dialog', 'Dialog 弹出窗']
+                ]
+            },
+            {
+                title: '解决方案',
+                collapsable: false,
+                children: [
+                    ['/guide/echarts', 'Echarts 使用教程']
+                ]
+            }
+        ]
     },
     markdown: {
         lineNumbers: true

@@ -2,7 +2,7 @@
 home: true
 heroImage: /image/favicon.ico
 heroText: aspire-frontend 开发文档
-tagline: 简约而不简单
+tagline: 深圳卓望前端开发文档
 actionText: 快速上手 →
 actionLink: /guide/
 features:

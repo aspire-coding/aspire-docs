@@ -14,13 +14,17 @@
 
 ## 提交代码说明
 
+[原文](https://ruby-china.org/topics/15737)
+
 ```
-feat: 新增功能用
-fix: 修复bug时用，带禅道bug编号 如 #7812
-docs: 仅仅修改了文档，比如README 等
-style: 仅仅修改了空格、格式缩进、标点符号等等，不改变代码逻辑
-refactor: 代码重构，没有加新功能或者修复bug
-perf: 优化相关，比如提升性能、体验
+feat 新功能（feature）
+fix 修补bug
+docs 文档（documentation）
+style 格式（不影响代码运行的变动）
+refactor 重构（即不是新增功能，也不是修改bug的代码变动）
+test 增加测试
+chore 构建过程、辅助工具的变动
+perf 提高性能
 ```
 
 ## 开发的一些约定和说明
