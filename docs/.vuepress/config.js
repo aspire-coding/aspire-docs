@@ -38,6 +38,7 @@ module.exports = {
                 children: [
                     ['/guide/components/asp-tree-select', 'TreeSelect 下拉树'],
                     ['/guide/components/Card', 'Card 卡片'],
+                    ['/guide/components/Frame', 'Frame 边框'],
                     ['/guide/components/query-table', 'QueryTable 搜索表格'],
                     ['/guide/components/query-form', 'QueryForm 搜索框'],
                     ['/guide/components/dialog', 'Dialog 弹出窗']

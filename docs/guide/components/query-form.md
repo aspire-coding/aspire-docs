@@ -1,5 +1,17 @@
 # Query-form 表单
 
+#### new 全局主动事件
+
+```js
+// 1、主动获取表单参数
+
+// query-form 调用
+this.$refs.queryForm.getModel()
+
+// query-table 调用
+this.$refs.queryTable.$refs.queryForm.getModel()
+```
+
 ### 样例视图
 
 ![Alt text](../images/query-form/query-form.jpg)
@@ -25,6 +37,7 @@
             label: '纯文本',
             type: 'text',
             placeholder: '请输入纯文本',
+            defaultValue: 1,  // 初始化默认值
             columnName: 'text'
           },
           // 下拉框 
@@ -33,6 +46,7 @@
             type: 'select',
             placeholder: '请选择下拉框',
             columnName: 'select',
+            // clearable: false, 下拉框是否可以清空当前值
             options: [
               {
                 value: 123,
@@ -119,6 +133,7 @@ props | type = selectTree 配置选项 详情看 el-tree 插件 | object | — |
 show | 是否隐藏 | boolean | true/false | true
 defaultValue | 默认值 | — | — | —
 multiple | type = select 下拉框时可配置 | false | true / false | —
+clearable | type = select 下拉框时 是否可清空当前值 | true | true / false | —
 
 ### FormFields Type Attributes
 

@@ -7,6 +7,30 @@
 ui的层面，你只需要考虑数据，只要数据对了，生成的页面就是正确的。
 :::
 
+::: warning 温馨提示
+基于各位同学的各种业务需求，新增了几个http相关的方法：
+
+1、请求前操作
+
+beforeHttp: (data) => {
+  console.log(data)
+}
+
+2、请求后操作 tableData -> 表格数据  allData -> 后台返回所有数据
+
+afterHttp: (tableData, allData) => {
+  console.log(tableData)
+  console.log(allData)
+}
+
+3、如果想主动选中表格某些行，可进行如下操作(仅供思路参考)：
+
+this.$refs.queryTable.$refs.tableList.$refs.table.toggleRowSelection(rows)
+
+4、主动请求方法  // 选填：（parmas => 参数） 根据场景使用
+
+this.$refs.queryTable.loadTable(parmas)
+:::
 
 下面让我们一一探索
 
@@ -25,15 +49,9 @@ ui的层面，你只需要考虑数据，只要数据对了，生成的页面就
 </template>
 ```
 
-
-### 主动请求方法：this.$refs.queryTable.loadTable(parmas)
-
 ### JAVASCRIPT
 
 <br/>
-
-<details>
-<summary>展开代码：</summary>
 
 ```js
 export default {
@@ -45,6 +63,7 @@ export default {
               url: {
                 type: 'POST',
                 method: '/v1/alertFilterCondition/list',
+                addNamespace: false, // true: 带上namespace  false:不带上namespace
                 obj: Obj  // 如果有参数请带上参数 无参数可以不传
               },
               // 表格选项
@@ -55,9 +74,10 @@ export default {
                 beforeHttp: (data) => {
                   console.log(data)
                 },
-                // 请求后操作
-                afterHttp: (data) => {
-                  console.log(data)
+                // 请求后操作 tableData -> 表格数据  allData -> 后台返回所有数据
+                afterHttp: (tableData, allData) => {
+                  console.log(tableData)
+                  console.log(allData)
                 },
                 // 选中后操作
                 selectionChange: row => {
@@ -121,8 +141,6 @@ export default {
 }
 ```
 
-</details>
-
 ## 用法2：表单、表格和分页
 
 ### 样例视图
@@ -146,9 +164,6 @@ export default {
 
 <br/>
 
-<details>
-<summary>展开代码：</summary>
-
 ```js
 export default {
     data () {
@@ -157,9 +172,10 @@ export default {
             tables: {
               // 请求地址详情
               url: {
-                type: 'POST',
-                method: '/v1/alertFilterCondition/list',
-                obj: Obj  // 如果有参数请带上参数 无参数可以不传
+                type: 'POST',  // POST or GET
+                method: '/v1/alertFilterCondition/list', // 请求的接口
+                addNamespace: false, // true: 带上namespace  false:不带上namespace
+                // obj: Obj  // 如果有参数请带上参数 无参数可以不传
               },
               // 表格选项
               options: {
@@ -169,10 +185,11 @@ export default {
                 beforeHttp: (data) => {
                   console.log(data)
                 },
-                // 请求后操作
-                afterHttp: (data) => {
-                  console.log(data)
-                },
+               // 请求后操作 tableData -> 表格数据  allData -> 后台返回所有数据
+                 afterHttp: (tableData, allData) => {
+                    console.log(tableData)
+                    console.log(allData)
+                 },
                 // 选中后操作
                 selectionChange: row => {
                   console.log(row)
@@ -268,8 +285,6 @@ export default {
 }
 ```
 
-</details>
-
 
 <hr/>
 
@@ -291,9 +306,6 @@ operation | 固定列配置
 formatter | 自定义列输出  例如：后端返回的数据是 10，前端想显示 10%
 
 ## Tables 参数详解
-<br/>
-<details>
-<summary>展开代码：</summary>
 
 ```js
 export default {
@@ -304,6 +316,7 @@ export default {
               url: {
                 type: 'POST',
                 method: '/v1/alertFilterCondition/list',
+                addNamespace: false, // true: 带上namespace  false:不带上namespace
                 obj: null  // 如果有参数请带上参数 无参数可以不传
               },
               // 表格选项
@@ -314,10 +327,11 @@ export default {
                 beforeHttp: (data) => {
                   console.log(data)
                 },
-                // 请求后操作
-                afterHttp: (data) => {
-                  console.log(data)
-                },
+                // 请求后操作 tableData -> 表格数据  allData -> 后台返回所有数据
+                 afterHttp: (tableData, allData) => {
+                     console.log(tableData)
+                     console.log(allData)
+                 },
                 // 选中后操作
                 selectionChange: row => {
                   console.log(row)
@@ -383,8 +397,6 @@ export default {
     }
 }
 ```
-
-</details>
 
 
 
