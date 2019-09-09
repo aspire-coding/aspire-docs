@@ -58,6 +58,8 @@
 | :----: | :----:| :------: |
 | data   | array |  展示数据，与树形控件一致 |
 | props  | object|  配置选项，与树形控件一致 |
+| load  | function(node, resolve) |  加载子树数据的方法，仅当 lazy 属性为true 时生效 |
+| lazy  | object|  是否懒加载子节点，需与 load 方法结合使用 |
 | showCheckbox  | Boolean|  默认为true，可设置为单选|
 | v-model| array | 获取选中节点的value  |
 

@@ -134,6 +134,8 @@ show | 是否隐藏 | boolean | true/false | true
 defaultValue | 默认值 | — | — | —
 multiple | type = select 下拉框时可配置 | false | true / false | —
 clearable | type = select 下拉框时 是否可清空当前值 | true | true / false | —
+load | 加载子树数据的方法，仅当 lazy 属性为true 时生效 | — | function(node, resolve) | —
+lazy | 是否懒加载子节点，需与 load 方法结合使用 | boolean | true / false | —
 
 ### FormFields Type Attributes
 

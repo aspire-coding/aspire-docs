@@ -6,7 +6,7 @@ Dailog 弹出一个对话框
 
 ### 样例视图
 
-![Alt text](../images/dialog/dialog.png)
+![Alt text](../images/dialog/dialog-new.jpg)
 
 
 ### 主代码
@@ -80,10 +80,21 @@ Dailog 弹出一个对话框
 
 ### 组件 com.vue
 
+::: danger 注意
+在使用弹窗组件时，请务必保持以下代码结构，避免出现样式错误的问题。
+
+```html
+<div>
+    <div class="asp-dialog__body">...</div>
+    <div class="asp-dialog__footer">...</div>
+</div>
+```
+:::
+
 ```vue
 <template>
   <div>
-    <div>
+    <div class="asp-dialog__body">
       <p>需要注意的是内容是默认不居中的</p>
       <p>需要注意的是内容是默认不居中的</p>
       <p>需要注意的是内容是默认不居中的</p>
@@ -93,8 +104,8 @@ Dailog 弹出一个对话框
       <p>需要注意的是内容是默认不居中的</p>
       <p>需要注意的是内容是默认不居中的</p>
     </div>
-    <div class="el-dialog__footer">
-      <el-button type="primary">保存(S)</el-button>
+    <div class="asp-dialog__footer">
+      <el-button type="primary">保存</el-button>
       <el-button @click="$emit('close')">取消</el-button>
     </div>
   </div>
