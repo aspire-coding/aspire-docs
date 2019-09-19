@@ -1,9 +1,9 @@
 # 开发规范
 
-## 开发命名规范
+## :star::star::star: 开发命名规范
 
 为了统一开发规范，文件以及文件夹命名统一，用'-'（横杠）的形式进行命名。
-例如`custome-select.vue`的`.vue`文件 或者`custome-select`文件夹。
+例如`custom-select.vue`的`.vue`文件 或者`custom-select`文件夹。路由名称也请使用`/select/custom-select`的形式命名。
 
 ## 代码规范
 

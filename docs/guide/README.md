@@ -1,18 +1,23 @@
 # 介绍
 
-`Aspire Frontend`是一个后台前端解决方案，它基于 `vue` 和 `element-ui` 实现。
+`Aspire Frontend`是一个后台前端解决方案，它基于 `vue` 和 `element-ui` 实现。目的为了动环的前端开发者提供友好的开发文档，更快的熟悉动环项目。
 
 ## 功能
 
 ```
 - 登录 / 注销
 
-- 共有组件
+- 公有组件
   - 卡片 asp-card
   - 下拉树 asp-tree-select
   - 表格 query-table
   - 表单 query-form
   - 可拖拽弹窗 asp-dialog
+  - 颜色选择框 asp-color-picker
+  - 首页公用框 asp-frame
+  - 工具栏 asp-tool-list
+  - 上传工具 asp-upload
+  - 组态工具 asp-view
 ```
 
 ## 目录结构
