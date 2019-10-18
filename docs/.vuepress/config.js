@@ -18,31 +18,22 @@ module.exports = {
         text: '指南',
         link: '/guide/'
       },
-      // {
-      //     text: '语言',
-      //     items: [
-      //         // { text: '中文', link: '/language/chinese/' },
-      //         // { text: 'English', link: '/language/english/' }
-      //     ]
-      // },
       {
         text: 'GitHub',
         link: 'https://github.com/aspire-coding/aspire-docs'
       }
     ],
-    // sidebar: {
-    //     '/guide/' :[
-    //         ['/guide/', '介绍'],
-    //         ['/guide/standard', '开发规范'],
-    //         ['/guide/css', '公有css使用'],
-    //         ['/guide/asp-tree-select', 'AspTreeSelect 下拉树'],
-    //         '/guide/query-table'
-    //     ]
-    // }
-    sidebar: [
-      ['/guide/', '介绍'],
-      ['/guide/standard', '开发规范'],
-      ['/guide/css', '公有css使用'],
+    sidebar: [{
+        title: '基本',
+        collapsable: false,
+        children: [
+          ['/guide/', '介绍'],
+          ['/guide/base/standard', '开发规范'],
+          ['/guide/base/css', '公有css使用'],
+          ['/guide/base/style-guide', '风格指南'],
+          ['/guide/base/new-page', '新增页面']
+        ]
+      },
       {
         title: '组件',
         collapsable: false,
