@@ -1,59 +1,75 @@
 module.exports = {
-    title: 'Aspire Frontend',
-    description: '简单工作 简单生活',
-    // dest: './docs/.vuepress/dist',  // 设置输出目录
-    base: '/aspire-docs/',
-    head:[
-        ['link', {rel:'icon', href:'/image/favicon.ico'}]
+  title: 'Aspire Frontend',
+  description: '简单工作 简单生活',
+  // dest: './docs/.vuepress/dist',  // 设置输出目录
+  base: '/aspire-docs/',
+  head: [
+    ['link', {
+      rel: 'icon',
+      href: '/image/favicon.ico'
+    }]
+  ],
+  themeConfig: {
+    nav: [{
+        text: '主页',
+        link: '/'
+      },
+      {
+        text: '指南',
+        link: '/guide/'
+      },
+      // {
+      //     text: '语言',
+      //     items: [
+      //         // { text: '中文', link: '/language/chinese/' },
+      //         // { text: 'English', link: '/language/english/' }
+      //     ]
+      // },
+      {
+        text: 'GitHub',
+        link: 'https://github.com/aspire-coding/aspire-docs'
+      }
     ],
-    themeConfig: {
-        nav: [
-            { text: '主页', link: '/' },
-            { text: '指南', link: '/guide/' },
-            // {
-            //     text: '语言',
-            //     items: [
-            //         // { text: '中文', link: '/language/chinese/' },
-            //         // { text: 'English', link: '/language/english/' }
-            //     ]
-            // },
-            { text: 'GitHub', link: 'https://github.com/aspire-coding/aspire-docs' }
-        ],
-        // sidebar: {
-        //     '/guide/' :[
-        //         ['/guide/', '介绍'],
-        //         ['/guide/standard', '开发规范'],
-        //         ['/guide/css', '公有css使用'],
-        //         ['/guide/asp-tree-select', 'AspTreeSelect 下拉树'],
-        //         '/guide/query-table'
-        //     ]
-        // }
-        sidebar: [
-            ['/guide/', '介绍'],
-            ['/guide/standard', '开发规范'],
-            ['/guide/css', '公有css使用'],
-            {
-                title: '组件',
-                collapsable: false,
-                children: [
-                    ['/guide/components/asp-tree-select', 'TreeSelect 下拉树'],
-                    ['/guide/components/Card', 'Card 卡片'],
-                    ['/guide/components/Frame', 'Frame 边框'],
-                    ['/guide/components/query-table', 'QueryTable 搜索表格'],
-                    ['/guide/components/query-form', 'QueryForm 搜索框'],
-                    ['/guide/components/dialog', 'Dialog 弹出窗']
-                ]
-            },
-            {
-                title: '解决方案',
-                collapsable: false,
-                children: [
-                    ['/guide/echarts', 'Echarts 使用教程']
-                ]
-            }
+    // sidebar: {
+    //     '/guide/' :[
+    //         ['/guide/', '介绍'],
+    //         ['/guide/standard', '开发规范'],
+    //         ['/guide/css', '公有css使用'],
+    //         ['/guide/asp-tree-select', 'AspTreeSelect 下拉树'],
+    //         '/guide/query-table'
+    //     ]
+    // }
+    sidebar: [
+      ['/guide/', '介绍'],
+      ['/guide/standard', '开发规范'],
+      ['/guide/css', '公有css使用'],
+      {
+        title: '组件',
+        collapsable: false,
+        children: [
+          ['/guide/components/asp-tree-select', 'TreeSelect 下拉树'],
+          ['/guide/components/Card', 'Card 卡片'],
+          ['/guide/components/Frame', 'Frame 边框'],
+          ['/guide/components/query-table', 'QueryTable 搜索表格'],
+          ['/guide/components/query-form', 'QueryForm 搜索框'],
+          ['/guide/components/dialog', 'Dialog 弹出窗'],
+          ['/guide/components/asp-input-upload', 'InputUpload 上传'],
         ]
-    },
-    markdown: {
-        lineNumbers: true
-    }
+      },
+      {
+        title: '解决方案',
+        collapsable: false,
+        children: [
+          ['/guide/solution/echarts', 'Echarts 使用'],
+          ['/guide/solution/iconfont', 'Iconfont 使用'],
+          ['/guide/solution/cross-domain', '跨域'],
+          ['/guide/solution/babel-polyfill', '兼容IE'],
+          ['/guide/solution/optimization-1', '性能优化（一）：大型列表数据']
+        ]
+      }
+    ]
+  },
+  markdown: {
+    lineNumbers: true
+  }
 };

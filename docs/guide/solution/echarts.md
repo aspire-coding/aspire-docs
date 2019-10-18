@@ -75,7 +75,7 @@ import echarts from 'echarts'
 
 使用以上代码可以实现一个简单的图表：
 
-![Alt text](./images/echarts/z.png)
+![Alt text](./../images/echarts/z.png)
 
 但是当我们拖拉浏览器时，图表并没有跟随浏览器进行自适应的拉伸，要如何解决呢？
 
