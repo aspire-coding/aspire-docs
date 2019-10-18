@@ -45,6 +45,7 @@ module.exports = {
           ['/guide/components/query-form', 'QueryForm 搜索框'],
           ['/guide/components/dialog', 'Dialog 弹出窗'],
           ['/guide/components/asp-input-upload', 'InputUpload 上传'],
+          ['/guide/components/asp-alarm-tag', 'AlarmTag 告警标签']
         ]
       },
       {
