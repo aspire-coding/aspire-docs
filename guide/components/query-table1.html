@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Query-Table | Aspire Frontend</title>
+    <meta name="description" content="简单工作 简单生活">
+    <link rel="icon" href="/aspire-docs/image/favicon.ico">
+    
+    <link rel="preload" href="/aspire-docs/assets/css/0.styles.4661644f.css" as="style"><link rel="preload" href="/aspire-docs/assets/js/app.8a885256.js" as="script"><link rel="preload" href="/aspire-docs/assets/js/20.9faeaabf.js" as="script"><link rel="prefetch" href="/aspire-docs/assets/js/10.79681d56.js"><link rel="prefetch" href="/aspire-docs/assets/js/11.55e05485.js"><link rel="prefetch" href="/aspire-docs/assets/js/12.b5a48ab9.js"><link rel="prefetch" href="/aspire-docs/assets/js/13.1a107bf1.js"><link rel="prefetch" href="/aspire-docs/assets/js/14.4227dc44.js"><link rel="prefetch" href="/aspire-docs/assets/js/15.a1662496.js"><link rel="prefetch" href="/aspire-docs/assets/js/16.50a5b0cf.js"><link rel="prefetch" href="/aspire-docs/assets/js/17.def821b8.js"><link rel="prefetch" href="/aspire-docs/assets/js/18.83be8c88.js"><link rel="prefetch" href="/aspire-docs/assets/js/19.836519b4.js"><link rel="prefetch" href="/aspire-docs/assets/js/2.f05b78a3.js"><link rel="prefetch" href="/aspire-docs/assets/js/21.624f9210.js"><link rel="prefetch" href="/aspire-docs/assets/js/22.534ed7c5.js"><link rel="prefetch" href="/aspire-docs/assets/js/23.87e5ca62.js"><link rel="prefetch" href="/aspire-docs/assets/js/24.b28eb196.js"><link rel="prefetch" href="/aspire-docs/assets/js/25.6acd613c.js"><link rel="prefetch" href="/aspire-docs/assets/js/3.d95aa44a.js"><link rel="prefetch" href="/aspire-docs/assets/js/4.bbbe53dc.js"><link rel="prefetch" href="/aspire-docs/assets/js/5.79d3be35.js"><link rel="prefetch" href="/aspire-docs/assets/js/6.b38e2eeb.js"><link rel="prefetch" href="/aspire-docs/assets/js/7.34639170.js"><link rel="prefetch" href="/aspire-docs/assets/js/8.7e50b484.js"><link rel="prefetch" href="/aspire-docs/assets/js/9.129544a2.js">
+    <link rel="stylesheet" href="/aspire-docs/assets/css/0.styles.4661644f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/aspire-docs/" class="home-link router-link-active"><!----> <span class="site-name">Aspire Frontend</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/aspire-docs/" class="nav-link">主页</a></div><div class="nav-item"><a href="/aspire-docs/guide/" class="nav-link router-link-active">指南</a></div><div class="nav-item"><a href="https://github.com/aspire-coding/aspire-docs" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/aspire-docs/" class="nav-link">主页</a></div><div class="nav-item"><a href="/aspire-docs/guide/" class="nav-link router-link-active">指南</a></div><div class="nav-item"><a href="https://github.com/aspire-coding/aspire-docs" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>基本</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/aspire-docs/guide/" class="sidebar-link">介绍</a></li><li><a href="/aspire-docs/guide/base/standard.html" class="sidebar-link">开发规范</a></li><li><a href="/aspire-docs/guide/base/css.html" class="sidebar-link">公有css使用</a></li><li><a href="/aspire-docs/guide/base/style-guide.html" class="sidebar-link">风格指南</a></li><li><a href="/aspire-docs/guide/base/new-page.html" class="sidebar-link">新增页面</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>组件</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/aspire-docs/guide/components/asp-tree-select.html" class="sidebar-link">TreeSelect 下拉树</a></li><li><a href="/aspire-docs/guide/components/Card.html" class="sidebar-link">Card 卡片</a></li><li><a href="/aspire-docs/guide/components/Frame.html" class="sidebar-link">Frame 边框</a></li><li><a href="/aspire-docs/guide/components/query-table.html" class="sidebar-link">QueryTable 搜索表格</a></li><li><a href="/aspire-docs/guide/components/query-form.html" class="sidebar-link">QueryForm 搜索框</a></li><li><a href="/aspire-docs/guide/components/dialog.html" class="sidebar-link">Dialog 弹出窗</a></li><li><a href="/aspire-docs/guide/components/asp-input-upload.html" class="sidebar-link">InputUpload 上传</a></li><li><a href="/aspire-docs/guide/components/asp-alarm-tag.html" class="sidebar-link">AlarmTag 告警标签</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>解决方案</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/aspire-docs/guide/solution/echarts.html" class="sidebar-link">Echarts 使用</a></li><li><a href="/aspire-docs/guide/solution/iconfont.html" class="sidebar-link">Iconfont 使用</a></li><li><a href="/aspire-docs/guide/solution/cross-domain.html" class="sidebar-link">跨域</a></li><li><a href="/aspire-docs/guide/solution/babel-polyfill.html" class="sidebar-link">兼容IE</a></li><li><a href="/aspire-docs/guide/solution/optimization-1.html" class="sidebar-link">性能优化（一）：大型列表数据</a></li><li><a href="/aspire-docs/guide/solution/cooperation/query-table.html" class="sidebar-link">关于表格的协作</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="query-table"><a href="#query-table" class="header-anchor">#</a> Query-Table</h1> <h2 id="介绍"><a href="#介绍" class="header-anchor">#</a> 介绍</h2> <p>目前<code>query table</code> 由三个小组件组成</p> <ul><li>tool-bar</li> <li>query-form</li> <li>table-list</li></ul> <p>这三个组件是<code>query-table</code>的核心，它分别是功能按钮组件、搜索组件、表格组件。组合在一起时可以快速的生成一个表格。但是并不是一定要组合在一起才能使用，
+根据业务场景拆开来使用也是一种不错的选中。</p> <div class="tip custom-block"><p class="custom-block-title">优势</p> <p>当团队逐渐变大时，就不得不考虑几个问题。代码规范、ui规范。使用 query-table 我们不用去考虑这个问题。甚至你完全不用去考虑
+ui的层面，你只需要考虑数据，只要数据对了，生成的页面就是正确的。</p></div> <p>下面让我们一一探索</p> <h2 id="query-table-结合使用"><a href="#query-table-结合使用" class="header-anchor">#</a> Query-Table 结合使用</h2> <h3 id="html"><a href="#html" class="header-anchor">#</a> HTML</h3> <div class="language-vue line-numbers-mode"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>query-table</span> <span class="token attr-name">:tools</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>tools<span class="token punctuation">&quot;</span></span>
+                   <span class="token attr-name">:tables</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>tables<span class="token punctuation">&quot;</span></span>
+                   <span class="token attr-name">:form-fields</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>formFields<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>query-table</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="javascript"><a href="#javascript" class="header-anchor">#</a> JAVASCRIPT</h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> <span class="token string">'coding'</span><span class="token punctuation">,</span>
+  <span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      tools<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          label<span class="token punctuation">:</span> <span class="token string">'新增'</span><span class="token punctuation">,</span>
+          icon<span class="token punctuation">:</span> <span class="token string">'el-icon-success'</span><span class="token punctuation">,</span>
+          type<span class="token punctuation">:</span> <span class="token string">'primary'</span><span class="token punctuation">,</span>
+          <span class="token function-variable function">func</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'新增'</span><span class="token punctuation">)</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          label<span class="token punctuation">:</span> <span class="token string">'修改'</span><span class="token punctuation">,</span>
+          icon<span class="token punctuation">:</span> <span class="token string">'el-icon-error'</span><span class="token punctuation">,</span>
+          type<span class="token punctuation">:</span> <span class="token string">'primary'</span><span class="token punctuation">,</span>
+          <span class="token function-variable function">func</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'修改'</span><span class="token punctuation">)</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token comment">// 表单配置</span>
+      formFields<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          label<span class="token punctuation">:</span> <span class="token string">'姓名'</span><span class="token punctuation">,</span>
+          type<span class="token punctuation">:</span> <span class="token string">'text'</span><span class="token punctuation">,</span>
+          placeholder<span class="token punctuation">:</span> <span class="token string">'请输入姓名'</span><span class="token punctuation">,</span>
+          columnName<span class="token punctuation">:</span> <span class="token string">'name'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          label<span class="token punctuation">:</span> <span class="token string">'状态'</span><span class="token punctuation">,</span>
+          type<span class="token punctuation">:</span> <span class="token string">'select'</span><span class="token punctuation">,</span>
+          placeholder<span class="token punctuation">:</span> <span class="token string">'请选中状态'</span><span class="token punctuation">,</span>
+          columnName<span class="token punctuation">:</span> <span class="token string">'status'</span><span class="token punctuation">,</span>
+          lookup<span class="token punctuation">:</span> <span class="token string">''</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          label<span class="token punctuation">:</span> <span class="token string">'日期范围'</span><span class="token punctuation">,</span>
+          type<span class="token punctuation">:</span> <span class="token string">'daterange'</span><span class="token punctuation">,</span>
+          placeholder<span class="token punctuation">:</span> <span class="token string">'请选择日期范围'</span><span class="token punctuation">,</span>
+          columnName<span class="token punctuation">:</span> <span class="token string">'daterange'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          label<span class="token punctuation">:</span> <span class="token string">'时间范围'</span><span class="token punctuation">,</span>
+          type<span class="token punctuation">:</span> <span class="token string">'datetimerange'</span><span class="token punctuation">,</span>
+          placeholder<span class="token punctuation">:</span> <span class="token string">'请选择时间范围'</span><span class="token punctuation">,</span>
+          columnName<span class="token punctuation">:</span> <span class="token string">'datetimerange'</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token comment">// 表格配置312</span>
+      tables<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        url<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          method<span class="token punctuation">:</span> <span class="token string">'/overview/list'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        options<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          type<span class="token punctuation">:</span> <span class="token string">'selection'</span><span class="token punctuation">,</span>
+          page<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+          defaultSort<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            keys<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">,</span> <span class="token string">'name'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            prop<span class="token punctuation">:</span> <span class="token string">'name'</span><span class="token punctuation">,</span>
+            order<span class="token punctuation">:</span> <span class="token string">'descending'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token function-variable function">rowDblClick</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token parameter">row</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>row<span class="token punctuation">)</span>
+            <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'双击'</span><span class="token punctuation">)</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token function-variable function">selectionChange</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span>
+            <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'选中'</span><span class="token punctuation">)</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        columns<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            label<span class="token punctuation">:</span> <span class="token string">'告警级别'</span><span class="token punctuation">,</span>
+            type<span class="token punctuation">:</span> <span class="token string">'tag'</span><span class="token punctuation">,</span>
+            key<span class="token punctuation">:</span> <span class="token string">'leavel'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            label<span class="token punctuation">:</span> <span class="token string">'告警时间'</span><span class="token punctuation">,</span>
+            key<span class="token punctuation">:</span> <span class="token string">'date'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token comment">// {</span>
+          <span class="token comment">//   label: '局站/机房',</span>
+          <span class="token comment">//   type: 'btn-text',</span>
+          <span class="token comment">//   style: 'red',</span>
+          <span class="token comment">//   key: 'site',</span>
+          <span class="token comment">//   func: (row) =&gt; {</span>
+          <span class="token comment">//     this.alert()</span>
+          <span class="token comment">//   }</span>
+          <span class="token comment">// },</span>
+          <span class="token comment">// {</span>
+          <span class="token comment">//   label: '设备类型',</span>
+          <span class="token comment">//   key: 'type',</span>
+          <span class="token comment">//   type: 'point',</span>
+          <span class="token comment">//   color: () =&gt; {</span>
+          <span class="token comment">//     return 'red'</span>
+          <span class="token comment">//   }</span>
+          <span class="token comment">// },</span>
+          <span class="token punctuation">{</span>
+            label<span class="token punctuation">:</span> <span class="token string">'告警量'</span><span class="token punctuation">,</span>
+            key<span class="token punctuation">:</span> <span class="token string">'num'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            label<span class="token punctuation">:</span> <span class="token string">'告警信息'</span><span class="token punctuation">,</span>
+            key<span class="token punctuation">:</span> <span class="token string">'message'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            label<span class="token punctuation">:</span> <span class="token string">'设备名称'</span><span class="token punctuation">,</span>
+            key<span class="token punctuation">:</span> <span class="token string">'sbname'</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        operation<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          fixed<span class="token punctuation">:</span> <span class="token string">'right'</span><span class="token punctuation">,</span>
+          label<span class="token punctuation">:</span> <span class="token string">'操作'</span><span class="token punctuation">,</span>
+          width<span class="token punctuation">:</span> <span class="token string">'200px'</span><span class="token punctuation">,</span>
+          options<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              label<span class="token punctuation">:</span> <span class="token string">'增'</span><span class="token punctuation">,</span>
+              icon<span class="token punctuation">:</span> <span class="token string">'el-icon-circle-check-outline'</span><span class="token punctuation">,</span>
+              type<span class="token punctuation">:</span> <span class="token string">'icon'</span><span class="token punctuation">,</span>
+              <span class="token function-variable function">func</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                <span class="token function">alert</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">)</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              label<span class="token punctuation">:</span> <span class="token string">'删'</span><span class="token punctuation">,</span>
+              icon<span class="token punctuation">:</span> <span class="token string">'el-icon-circle-close-outline'</span><span class="token punctuation">,</span>
+              type<span class="token punctuation">:</span> <span class="token string">'icon'</span><span class="token punctuation">,</span>
+              <span class="token function-variable function">func</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                <span class="token function">alert</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">)</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              label<span class="token punctuation">:</span> <span class="token string">'改'</span><span class="token punctuation">,</span>
+              icon<span class="token punctuation">:</span> <span class="token string">'el-icon-edit-outline'</span><span class="token punctuation">,</span>
+              type<span class="token punctuation">:</span> <span class="token string">'icon'</span><span class="token punctuation">,</span>
+              <span class="token function-variable function">func</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                <span class="token function">alert</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">)</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              label<span class="token punctuation">:</span> <span class="token string">'查'</span><span class="token punctuation">,</span>
+              icon<span class="token punctuation">:</span> <span class="token string">'el-icon-zoom-in'</span><span class="token punctuation">,</span>
+              type<span class="token punctuation">:</span> <span class="token string">'icon'</span><span class="token punctuation">,</span>
+              <span class="token function-variable function">func</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                <span class="token function">alert</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">)</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token function">alert</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">alert</span><span class="token punctuation">(</span><span class="token number">312</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br></div></div></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/aspire-docs/assets/js/app.8a885256.js" defer></script><script src="/aspire-docs/assets/js/20.9faeaabf.js" defer></script>
+  </body>
+</html>
